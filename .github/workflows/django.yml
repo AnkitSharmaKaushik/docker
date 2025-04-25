@@ -44,4 +44,4 @@ jobs:
           context: .                   # root folder (myproject)
           file: ./Dockerfile           # Dockerfile in root
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/django-backend:latest  # Correct tag format
+          tags: ${{ secrets.DOCKER_USERNAME }}/django-backend:latest  
