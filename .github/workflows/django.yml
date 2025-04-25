@@ -41,7 +41,7 @@ jobs:
       - name: 🐳 Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: .                   
-          file: ./Dockerfile           
+          context: .                   # root folder (myproject)
+          file: ./Dockerfile           # Dockerfile in root
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/django-backend:latest
+          tags: ankitkalinga03/django-backend:latest  # Correct tag using Docker Hub username
